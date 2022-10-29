@@ -33,7 +33,7 @@ Prompt : '*a panda portrait, cartoon*'
 Prompt : '*a panda portrait*'
 ![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandaportrait0-15-30-40-47.png)
 
-When visualising all of the changes the full dynamism of the diffusion process can be visualised.
+When visualising all of the changes it is clear that the model mostly works on the panda intially before focussing on the background towards the end.
 
 ![A stable diffusion render of a sphere over five gradual stages.](/assets/images/panda_evolution.gif)
 
