@@ -7,7 +7,8 @@ categories: jekyll update
 
 Stable Diffusion is generative AI model for producing images from text. It is a form of diffusion model where a model is trained to gradually denoise an image conditioned on an input prompt over a number of iterations. Then with the trained model, we can start with pure gaussian noise and an input prompt and produce a brand new image. The results are impressive.
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+Prompt : '*an astronaut relaxing on a tropical island*'
+![A stable diffusion render of a astronaut on a tropical island five gradual stages.](/assets/images/astronauttop.png)
 
 To reduce training time Stable Diffusion carries out the diffusion process in a latent space before converting to a 512x512 image through a variational autoencoder. This is why the noise at the start of the diffusion process looks somewhat denser and less grainy than a image composed of pure gaussian noise.
 
@@ -15,8 +16,23 @@ To visualise what the network was doing at each step I thought it would be inter
 
 ![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
 
-Cool! Although it can't be seen in the noisy images themselves, there's a clearly the start of the panda's face emerging in the difference. We can then look at differences at later stages in the diffusing process.
+Although it can't be seen in the noisy images themselves, there's a clearly the start of the panda's face emerging in the difference. We can then look at differences at later stages in the diffusing process.
 
 ![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
 
-It seems that as diffusing process continues the parts of the image that are changing get more and more distinctive until it is almost entirely just the edge components of the image that are changing by the end. I think it's
+It seems that as diffusing process continues the parts of the image that are changing get more and more distinctive. The white and black areas of the image are almost untouched by the end with the majority of the changes occuring in the background and the edges in the image. Looking at a few more examples:
+
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+
+Here the initial changes don't nearly as closely resemble the final image as before. It takes a few iterations before the shape becomes apparent. Maybe if I we try a few more images with very distinctive shapes?
+
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+
