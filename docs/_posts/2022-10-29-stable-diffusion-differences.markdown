@@ -26,8 +26,6 @@ Here the panda face is obvious in the first iteration even though the change is 
 
 ![A stable diffusion render of a panda wearing a top hat over five gradual stages.](/assets/images/pandatop.png)
 
-When viewing all stages
-
 This is true for other pandas, but it seems the cartoon modifier is needed, perhaps as it encourages block colours.
 
 Prompt : '*a panda portrait, cartoon*'
@@ -35,12 +33,9 @@ Prompt : '*a panda portrait, cartoon*'
 Prompt : '*a panda portrait*'
 ![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandaportrait0-15-30-40-47.png)
 
-Another property worth noting is that towards the end of the process the panda itself is mostly fixed and it's the background that it mostly changing. This is a phenomena that seems to be repeated with simple objects.
+When visualising all of the changes the full dynamism of the diffusion process can be visualised.
 
-Prompt : '*sphere*'
-![A stable diffusion render of a sphere over five gradual stages.](/assets/images/sphere0-15-30-40-47.png)
-Prompt : '*a cake with flower decoration, food photography*'
-![A stable diffusion render of a flowery cake over five gradual stages.](/assets/images/cake0-15-30-40-47.png)
+Video
 
 I haven't managed to find any other image that seems to have the same recognisable initial change as the panda. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
 
@@ -50,6 +45,5 @@ Prompt : '*pyramids of giza, cartoon*'
 ![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pyramidsofgiza0-15-30-40-47.png)
 Prompt : '*a zebra*'
 ![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/zebra0-15-30-40-47.png)
-
-All of the 
-
+Prompt : '*a pineapple, pop art*'
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pineapple0-15-30-40-47.png)
