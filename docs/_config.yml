@@ -28,7 +28,7 @@ twitter_username: tobybaker97
 github_username:  tobybaker
 
 # Build settings
-theme: minimal
+theme: minima
 plugins:
   - jekyll-feed
 
