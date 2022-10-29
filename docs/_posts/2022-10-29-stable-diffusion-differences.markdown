@@ -17,7 +17,7 @@ To visualise what the network was doing at each step I thought it would be inter
 Prompt : '*an astronaut relaxing on a tropical island*'
 ![A stable diffusion render of a astronaut on a tropical island over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/astronaut0-15-30-40-47.png)
 
-The differences are coloured so that the biggest difference in each image is yellow. To start with there is no obvious pattern to the changes but midway through the process the shape of final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
+At the start there is no obvious pattern to the changes but midway through the process the shape of final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
 
 Prompt : '*a portrait of a panda wearing a top hat, cartoon*'
 ![A stable diffusion render of a panda wearing a top hat over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/panda0-15-30-40-47.png)
@@ -35,15 +35,15 @@ Prompt : '*a panda portrait*'
 
 When visualising all of the changes the full dynamism of the diffusion process can be visualised.
 
-Video
+![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandadiffusion.mp4)
 
 I haven't managed to find any other image that seems to have the same recognisable initial change as the panda. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
 
-Prompt : '*a snowman*'
-![A stable diffusion render of a snowman photograph over five gradual stages.](/assets/images/snowman0-15-30-40-47.png)
+Prompt : '*a snowman cartoon*'
+![A stable diffusion render of a snowman photograph over five gradual stages.](/assets/images/snowmancartoon0-15-30-40-47.png)
 Prompt : '*pyramids of giza, cartoon*'
 ![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pyramidsofgiza0-15-30-40-47.png)
-Prompt : '*a zebra*'
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/zebra0-15-30-40-47.png)
+Prompt : '*a zebra cartoon*'
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/zebracartoon0-15-30-40-47.png)
 Prompt : '*a pineapple, pop art*'
 ![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pineapple0-15-30-40-47.png)
