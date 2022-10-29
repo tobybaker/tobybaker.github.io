@@ -24,14 +24,14 @@ Prompt : '*a portrait of a panda wearing a top hat, cartoon*'
 
 Here the panda face is obvious in the first iteration even though the change is impercetible in the noisy images themselves:
 
-![A stable diffusion render of a panda wearing a top hat over five gradual stages.](/assets/images/pandatop.png)
+![Illustration of subtraction of the first iteration of a panda stable diffusion render from the initial noise](/assets/images/subtraction.png)
 
 This is true for other pandas, but it seems the cartoon modifier is needed, perhaps as it encourages block colours.
 
 Prompt : '*a panda portrait, cartoon*'
-![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandacartoon0-15-30-40-47.png)
+![A stable diffusion render of a panda portrait with cartoon modifier over five gradual stages.](/assets/images/pandacartoon0-15-30-40-47.png)
 Prompt : '*a panda portrait*'
-![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandaportrait0-15-30-40-47.png)
+![A stable diffusion render of a panda portrait without cartoon modifier over five gradual stages.](/assets/images/pandaportrait0-15-30-40-47.png)
 
 When visualising all of the changes it is clear that the model mostly works on the panda intially before focussing on the background towards the end.
 
@@ -40,10 +40,10 @@ When visualising all of the changes it is clear that the model mostly works on t
 I haven't managed to find any other image that seems to have a recognisable initial diffusion change as pandas. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
 
 Prompt : '*a snowman cartoon*'
-![A stable diffusion render of a snowman photograph over five gradual stages.](/assets/images/snowmancartoon0-15-30-40-47.png)
+![A stable diffusion render of a cartoon snowman photograph over five gradual stages.](/assets/images/snowmancartoon0-15-30-40-47.png)
 Prompt : '*pyramids of giza, cartoon*'
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pyramidsofgiza0-15-30-40-47.png)
+![A stable diffusion render of a cartoon pyramids of giza wearing a top hat five gradual stages.](/assets/images/pyramidsofgiza0-15-30-40-47.png)
 Prompt : '*a zebra cartoon*'
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/zebracartoon0-15-30-40-47.png)
+![A stable diffusion render of a cartoon zebra wearing a top hat five gradual stages.](/assets/images/zebracartoon0-15-30-40-47.png)
 Prompt : '*a pineapple, pop art*'
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pineapple0-15-30-40-47.png)
+![A stable diffusion render of a pop art pineapple wearing a top hat five gradual stages.](/assets/images/pineapple0-15-30-40-47.png)
