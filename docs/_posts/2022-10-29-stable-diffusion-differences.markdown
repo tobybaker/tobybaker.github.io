@@ -8,34 +8,48 @@ categories: jekyll update
 Stable Diffusion is generative AI model for producing images from text. It is a form of diffusion model where a model is trained to gradually denoise an image conditioned on an input prompt over a number of iterations. Then with the trained model, we can start with pure gaussian noise and an input prompt and produce a brand new image. The results are impressive.
 
 Prompt : '*an astronaut relaxing on a tropical island*'
-![A stable diffusion render of a astronaut on a tropical island five gradual stages.](/assets/images/astronaut_top.png)
+![A stable diffusion render of a astronaut on a tropical island over five gradual stages.](/assets/images/astronaut_top.png)
 
 To reduce training time Stable Diffusion carries out the diffusion process in a latent space before converting to a 512x512 image through a variational autoencoder. This is why the noise at the start of the diffusion process looks somewhat denser and less grainy than a image composed of pure gaussian noise.
 
 To visualise what the network was doing at each step I thought it would be interesting to visualise the difference between sequential iterations of the de-diffusion process. Looking at the example above, we can measure the absolute difference (in RGB space) between the the denoised step and the previous iteration at a number of timepoints.
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/astronaut0-15-30-40-47.png)
+Prompt : '*an astronaut relaxing on a tropical island*'
+![A stable diffusion render of a astronaut on a tropical island over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/astronaut0-15-30-40-47.png)
 
 The differences are coloured so that the biggest difference in each image is yellow. To start with there is no obvious pattern to the changes but midway through the process the shape of final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
 
+Prompt : '*a portrait of a panda wearing a top hat, cartoon*'
+![A stable diffusion render of a panda wearing a top hat over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/panda0-15-30-40-47.png)
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/panda0-15-30-40-47.png)
+Here the panda face is obvious in the first iteration even though the change is impercetible in the noisy images themselves:
 
-Here the panda face is obvious in the first iteration. Even though the change is impercetible in the noisy images themselves:
+![A stable diffusion render of a panda wearing a top hat over five gradual stages.](/assets/images/pandatop.png)
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+When viewing all stages
 
-Another property worth noting is that towards the end of the process the black and white parts of the image are constant and its the background that it mostly changing. This is a phenomena that seems to be repeated with simple objects.
+This is true for other pandas, but it seems the cartoon modifier is needed, perhaps as it encourages block colours.
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/sphere0-15-30-40-47.png)
+Prompt : '*a panda portrait, cartoon*'
+![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandacartoon0-15-30-40-47.png)
+Prompt : '*a panda portrait*'
+![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandaportrait0-15-30-40-47.png)
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/cake0-15-30-40-47.png)
+Another property worth noting is that towards the end of the process the panda itself is mostly fixed and it's the background that it mostly changing. This is a phenomena that seems to be repeated with simple objects.
 
-Here the initial changes don't nearly as closely resemble the final image as before. It takes a few iterations before the shape becomes apparent. Maybe if I we try a few more images with very distinctive shapes?
+Prompt : '*sphere*'
+![A stable diffusion render of a sphere over five gradual stages.](/assets/images/sphere0-15-30-40-47.png)
+Prompt : '*a cake with flower decoration, food photography*'
+![A stable diffusion render of a flowery cake over five gradual stages.](/assets/images/cake0-15-30-40-47.png)
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+I haven't managed to find any other image that seems to have the same recognisable initial change as the panda. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+Prompt : '*a snowman*'
+![A stable diffusion render of a snowman photograph over five gradual stages.](/assets/images/snowman0-15-30-40-47.png)
+Prompt : '*pyramids of giza, cartoon*'
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pyramidsofgiza0-15-30-40-47.png)
+Prompt : '*a zebra*'
+![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/zebra0-15-30-40-47.png)
 
-![A stable diffusion render of a panda wearing a top hat five gradual stages.](/assets/images/pandatop.png)
+All of the 
 
