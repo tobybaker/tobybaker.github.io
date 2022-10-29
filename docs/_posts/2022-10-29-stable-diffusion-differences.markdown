@@ -35,7 +35,7 @@ Prompt : '*a panda portrait*'
 
 When visualising all of the changes the full dynamism of the diffusion process can be visualised.
 
-![A stable diffusion render of a sphere over five gradual stages.](/assets/images/pandadiffusion.mp4)
+![A stable diffusion render of a sphere over five gradual stages.](/assets/images/panda_evolution.gif)
 
 I haven't managed to find any other image that seems to have the same recognisable initial change as the panda. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
 
