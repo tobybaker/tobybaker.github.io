@@ -10,14 +10,14 @@ Stable Diffusion is generative AI model for producing images from text. It is a 
 Prompt : '*an astronaut relaxing on a tropical island*'
 ![A stable diffusion render of a astronaut on a tropical island over five gradual stages.](/assets/images/astronaut_top.png)
 
-To reduce training time Stable Diffusion carries out the diffusion process in a latent space before converting to a 512x512 image through a variational autoencoder. This is why the noise at the start of the diffusion process looks somewhat denser and less grainy than a image composed of pure gaussian noise.
+To reduce training time, Stable Diffusion carries out the diffusion process in a latent space before converting to a 512x512 image through a variational autoencoder. This is why the noise at the start of the diffusion process looks somewhat denser and less grainy than a image composed of pure gaussian noise.
 
 To visualise what the network was doing at each step I thought it would be interesting to visualise the difference between sequential iterations of the de-diffusion process. Looking at the example above, we can measure the absolute difference (in RGB space) between the the denoised step and the previous iteration at a number of timepoints.
 
 Prompt : '*an astronaut relaxing on a tropical island*'
 ![A stable diffusion render of a astronaut on a tropical island over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/astronaut0-15-30-40-47.png)
 
-At the start there is no obvious pattern to the changes but midway through the process the shape of final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
+At the start there is no obvious pattern to the changes, however midway through the shape of the final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
 
 Prompt : '*a portrait of a panda wearing a top hat, cartoon*'
 ![A stable diffusion render of a panda wearing a top hat over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/panda0-15-30-40-47.png)
@@ -37,7 +37,7 @@ When visualising all of the changes it is clear that the model mostly works on t
 
 ![A stable diffusion render of a sphere over five gradual stages.](/assets/images/panda_evolution.gif)
 
-I haven't managed to find any other image that seems to have the same recognisable initial change as the panda. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
+I haven't managed to find any other image that seems to have a recognisable initial diffusion change as pandas. Even with objects with very distinctive shapes. I wonder what's so special about pandas?
 
 Prompt : '*a snowman cartoon*'
 ![A stable diffusion render of a snowman photograph over five gradual stages.](/assets/images/snowmancartoon0-15-30-40-47.png)
