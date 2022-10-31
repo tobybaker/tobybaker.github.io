@@ -5,7 +5,7 @@ date:   2022-10-29 11:37:59 +0100
 categories: jekyll update
 ---
 
-Stable Diffusion is generative AI model for producing images from text. It is a form of diffusion model where a model is trained to gradually denoise an image conditioned on an input prompt over a number of iterations. Then with the trained model, we can start with pure gaussian noise and an input prompt and produce a brand new image. The results are impressive.
+Stable Diffusion is generative AI model for producing images from text. It is a form of diffusion model where a model is trained to gradually denoise an image conditioned on an input prompt over a number of iterations. Then with the trained model, we can start with pure gaussian noise and an input prompt and produce a new image. The results are impressive.
 
 Prompt : '*an astronaut relaxing on a tropical island*'
 ![A stable diffusion render of a astronaut on a tropical island over five gradual stages.](/assets/images/astronaut_top.png)
@@ -17,7 +17,7 @@ To visualise what the network was doing at each step I thought it would be inter
 Prompt : '*an astronaut relaxing on a tropical island*'
 ![A stable diffusion render of a astronaut on a tropical island over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/astronaut0-15-30-40-47.png)
 
-At the start there is no obvious pattern to the changes, however midway through the shape of the final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
+Initially, there is no obvious pattern to the changes, however midway through the shape of the final image becomes clearer and the changes are focussed on areas of high detail in the image. Looking at another example.
 
 Prompt : '*a portrait of a panda wearing a top hat, cartoon*'
 ![A stable diffusion render of a panda wearing a top hat over five gradual stages. The bottom row is the differences between the denoised images at each iteration](/assets/images/panda0-15-30-40-47.png)
